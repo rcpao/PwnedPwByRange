@@ -12,7 +12,7 @@ fi
 
 # Uncomment one of the following SHA1PW below:
 SHA1PW=`echo -n $1 | /usr/bin/sha1sum | cut -c 1-40`
-# SHA1PW=`echo -n \"$1\" | /usr/bin/openssl sha1 | cut 10-30`
+#SHA1PW=`echo -n $1 | /usr/bin/openssl sha1 | cut -c 10-50`
 HashHead=`echo $SHA1PW | cut -c 1-5`
 HashTail=`echo $SHA1PW | cut -c 6-`
 
