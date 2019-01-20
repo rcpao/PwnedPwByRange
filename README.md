@@ -1,6 +1,15 @@
 # PwnedPwByRange
 
+Bash shell script to "Check if you have an account that has been compromised in a data breach" via https://haveibeenpwned.com/API/v2#SearchingPwnedPasswordsByRange
+
+# WARNING: Make sure you disable shell history before running this or your
+#   passwords will be stored in your command line history.
+#   For bash, run: 'set +o history'
+
+Here is an example run for the password "123456":
+
 ```
+$ set +o history
 $ ./PwnedPwByRange.sh 123456
 + '[' 123456 == '' ']'
 ++ echo -n 123456
