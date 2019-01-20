@@ -19,3 +19,5 @@ HashTail=`echo $SHA1PW | cut -c 6-`
 TMPFILE=`mktemp`
 curl https://api.pwnedpasswords.com/range/$HashHead > $TMPFILE
 grep -i $HashTail $TMPFILE
+
+#rm $TMPFILE
