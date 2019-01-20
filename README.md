@@ -4,7 +4,7 @@ Bash shell script to "Check if you have an account that has been compromised in 
 
 WARNING: Make sure you disable shell history before running this or your passwords will be stored in your command line history.  For bash, run: 'set +o history'
 
-Here is an example run for the password "123456":
+Here is an example run for the password "123456" returning 23174662 occurrances:
 
 ```
 $ set +o history
@@ -12,7 +12,7 @@ $ ./PwnedPwByRange.sh 123456
 + '[' 123456 == '' ']'
 ++ echo -n 123456
 ++ /usr/bin/sha1sum
-++ cut -c 1-40
+++ cut -c 1-40showing
 + SHA1PW=7c4a8d09ca3762af61e59520943dc26494f8941b
 ++ echo 7c4a8d09ca3762af61e59520943dc26494f8941b
 ++ cut -c 1-5
